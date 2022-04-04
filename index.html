@@ -10,70 +10,82 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Студия</title>
   </head>
   <body>
-    <header class="header">
-      <a class="logo logo-top link" href=""
-        ><span class="logo-web">Web</span>Studio</a
-      >
-      <nav class="header-nav accent-effect">
-        <ul class="header-list list">
-          <li>
-            <a href="index.html" class="link-header current link">Студия</a>
+    <header class="header container">
+      <div class="gg">
+        <a class="logo logo-top link" href=""
+          ><span class="logo-web">Web</span>Studio</a
+        >
+        <nav class="header-nav accent-effect">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="index.html" class="link-header current link">Студия</a>
+            </li>
+            <li class="header-item">
+              <a href="portfolio.html" class="link-header link">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="link-header link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list accent-effect list-contacts-top">
+          <li class="contacts-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts contacts-top link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li>
-            <a href="portfolio.html" class="link-header link">Портфолио</a>
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="contacts contacts-top link"
+              >+38 096 111 11 11</a
+            >
           </li>
-          <li><a href="" class="link-header link">Контакты</a></li>
         </ul>
-      </nav>
-      <ul class="list accent-effect">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contacts contacts-top link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contacts contacts-top link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--Section 1 hero-->
-      <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button hero-bt">Заказать услуг</button>
+      <section class="hero container">
+        <div class="hero-section">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button hero-bt">Заказать услуг</button>
+        </div>
       </section>
       <!---Section 2 Преимущества-->
-      <section class="benefits">
+      <section class="benefits container">
         <h2 hidden>Преимущества</h2>
         <ul class="benefits-list list">
-          <li>
+          <li class="benefits-item">
             <h3 class="benefits-title">Внимание к деталям</h3>
             <p class="text benefits-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="benefits-item">
             <h3 class="benefits-title">Пунктуальность</h3>
             <p class="text benefits-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="benefits-item">
             <h3 class="benefits-title">Планирование</h3>
             <p class="text benefits-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="benefits-item">
             <h3 class="benefits-title">Современные технологии</h3>
             <p class="text benefits-text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -82,10 +94,10 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="container aboutus">
         <h2 class="aboutus-title">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
+        <ul class="list aboutus-list">
+          <li class="aboutus-item">
             <img
               src="images/box1.jpg"
               alt="Разработка программного обеспечения"
@@ -93,7 +105,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="aboutus-item">
             <img
               src="images/box2.jpg"
               alt="разработка мобильного приложения"
@@ -101,7 +113,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="aboutus-item">
             <img
               src="images/box3.jpg"
               alt="работа с цветовой палитрой"
@@ -112,11 +124,11 @@
         </ul>
       </section>
       <!-- Наша команда -->
-      <section class="team">
+      <section class="team container">
         <h2 class="team-title">Наша команда</h2>
-        <ul class="list">
-          <li>
-            <img
+        <ul class="list team-list">
+          <li class="team-item">
+            <img class="team-img"
               src="images/face1.jpg"
               alt="Product Designer Игорь Демьяненко"
               width="270"
@@ -125,8 +137,8 @@
             <h3 class="name-title">Игорь Демьяненко</h3>
             <p class="text text-after-name">Product Designer</p>
           </li>
-          <li>
-            <img
+          <li class="team-item">
+            <img class="team-img"
               src="images/face2.jpg"
               alt="Frontend Developer Ольга Репина"
               width="270"
@@ -135,8 +147,8 @@
             <h3 class="name-title">Ольга Репина</h3>
             <p class="text text-after-name">Frontend Developer</p>
           </li>
-          <li>
-            <img
+          <li class="team-item">
+            <img class="team-img"
               src="images/face3.jpg"
               alt="Marketing Николай Тарасов"
               width="270"
@@ -144,9 +156,9 @@
             />
             <h3 class="name-title">Николай Тарасов</h3>
             <p class="text text-after-name">Marketing</p>
-          </li>
-          <li>
-            <img
+          </li class="team0item">
+          <li class="team-item"> 
+            <img class="team-img"
               src="images/face4.jpg"
               alt="UI Designer Михаил Ермаков"
               width="270"
@@ -159,7 +171,8 @@
       </section>
     </main>
     <!--Подвал-->
-    <footer class="footer">
+    
+    <footer class="footer container">
       <a class="logo logo-bot link" href=""
         ><span class="logo-web">Web</span>Studio</a
       >
@@ -181,5 +194,6 @@
         </ul>
       </address>
     </footer>
+  
   </body>
 </html>

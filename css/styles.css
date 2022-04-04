@@ -24,6 +24,22 @@ body {
   font-size: 16px;
   font-style: normal;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ul {
+  padding-left: 0px;
+}
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 .button {
   cursor: pointer;
@@ -66,9 +82,22 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  margin-top: 9px;
+  display: block;
 }
 
-/*-------------------------------------- -------навигация Шапки */
+.list-contacts-top {
+  display: flex;
+  padding-left: 0px;
+  /* margin-top: 32px;
+  margin-bottom: 32px; */
+}
+
+.list-contacts-top .contacts-item + .contacts-item {
+  margin-left: 50px;
+}
+/* -------------------------------------- -------навигация Шапки */
 
 .link-header {
   color: inherit;
@@ -77,11 +106,41 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-list {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.gg {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.header-nav {
+  margin-right: 330px;
+  margin-left: 93px;
+}
 /*--------------------------------------------------hero */
 .hero {
   background-color: var(--secondary-background-color);
+  height: 600px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 94px;
 }
+
 .hero-title {
   color: var(--main-light-color-text);
   font-weight: 900;
@@ -90,17 +149,26 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  width: 696px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 .hero-bt {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* display: flex; */
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--main-light-color-text);
+
+  width: 200px;
+  height: 50px;
+  padding: 0px;
+}
+.hero-section {
 }
 .current {
   color: var(--accent-color);
@@ -118,6 +186,32 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+
+  margin-bottom: 94px;
+}
+
+.benefits-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.benefits-list {
+  display: flex;
+}
+.benefits-item {
+  width: 270px;
+  height: 75px;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+.benefits-title {
+  margin-bottom: 10px;
+}
+
+/*---------------------------------------------- Чем мы занимаемся */
+.aboutus {
+  align-items: center;
+  margin-bottom: 94px;
 }
 
 .aboutus-title {
@@ -127,15 +221,47 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+
+  margin-bottom: 50px;
 }
-.benefits-text {
-  font-size: 14px;
-  line-height: 1.71;
+
+.aboutus-list {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
+.aboutus-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*---------------------------------------------- Наша команда */
 .team {
   line-height: 1.18;
   letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-item {
+  width: 270px;
+  height: 368px;
+  text-align: center;
+
+  background-color: #ffffff;
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-bottom: 94px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-title {
@@ -144,12 +270,21 @@ body {
   line-height: 1.16;
   text-align: center;
   color: var(--primery-text-color);
+
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
+.team-img {
+  margin-bottom: 30px;
 }
 
 .name-title {
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 16px;
+
+  margin-bottom: 10px;
 }
 
 .text-after-name {
@@ -179,6 +314,9 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  width: 145px;
+  height: 31px;
 }
 
 .logo-web {
@@ -191,12 +329,18 @@ body {
 
 .logo-bot {
   color: var(--main-light-color-text);
+  margin-bottom: 20px;
+  display: block;
+  height: 31px;
+  width: 145px;
 }
 /* ---------------------------------------------------Подвал */
 
 .footer {
   background-color: var(--secondary-background-color);
   color: var(--main-light-color-text);
+  height: 252px;
+  display: block;
 }
 
 /*----------------------------------------------------Адресс */
@@ -206,9 +350,23 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-light-color-text);
+
+  margin-bottom: 9px;
 }
 
 /*----------------------------------------------------Портфолио */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 .portfolio {
   background-color: var(--main-light-color-text);
