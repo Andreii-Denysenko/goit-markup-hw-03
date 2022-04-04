@@ -240,6 +240,7 @@ p {
   line-height: 1.18;
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
+  padding-top: 94px;
 }
 
 .team-list {
@@ -272,7 +273,6 @@ p {
   color: var(--primery-text-color);
 
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 
 .team-img {
@@ -341,6 +341,7 @@ p {
   color: var(--main-light-color-text);
   height: 252px;
   display: block;
+  padding-top: 60px;
 }
 
 /*----------------------------------------------------Адресс */
