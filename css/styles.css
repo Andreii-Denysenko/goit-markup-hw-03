@@ -125,10 +125,13 @@ p {
   display: flex;
   align-items: center;
   height: 80px;
+  border-bottom: 1px solid #ececec;
 }
 .header-nav {
   margin-right: 330px;
   margin-left: 93px;
+}
+.header {
 }
 /*--------------------------------------------------hero */
 .hero {
@@ -384,7 +387,14 @@ p {
   line-height: 1.62;
   letter-spacing: 0.03em;
   font-style: normal;
-  text-align: center;
+}
+.portfolio-button-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+}
+.portfolio-button-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 /*-----------------------------------------------------Наши продукти*/
