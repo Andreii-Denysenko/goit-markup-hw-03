@@ -18,8 +18,8 @@
     <title>Студия</title>
   </head>
   <body>
-    <header class="header container">
-      <div class="gg">
+    <header class="header">
+      <div class="gg container">
         <a class="logo logo-top link" href="index.html"
           ><span class="logo-web">Web</span>Studio</a
         >
@@ -54,15 +54,16 @@
     </header>
     <main>
       <!--Section 1 hero-->
-      <section class="hero container">
-        <div class="hero-section">
+      <section class="hero">
+        <div class="hero-section container ">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button hero-bt">Заказать услуг</button>
         </div>
       </section>
       <!---Section 2 Преимущества-->
-      <section class="benefits container">
-        <h2 hidden>Преимущества</h2>
+      <section class="benefits">
+        <div class="container section-mod">
+        <h2 hidden class="visually-hidden">Преимущества</h2>
         <ul class="benefits-list list">
           <li class="benefits-item">
             <h3 class="benefits-title">Внимание к деталям</h3>
@@ -93,8 +94,11 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
-      <section class="container aboutus section">
+      
+      <section class=" aboutus section">
+        <div class="container">
         <h2 class="aboutus-title">Чем мы занимаемся</h2>
         <ul class="list aboutus-list">
           <li class="aboutus-item">
@@ -122,9 +126,11 @@
             />
           </li>
         </ul>
+      </div>
       </section>
       <!-- Наша команда -->
-      <section class="team container section">
+      <section class="team section">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="list team-list">
           <li class="team-item">
@@ -134,8 +140,10 @@
               width="270"
               height="260"
             />
+            <div>
             <h3 class="name-title">Игорь Демьяненко</h3>
             <p class="text text-after-name">Product Designer</p>
+            </div>
           </li>
           <li class="team-item">
             <img class="team-img"
@@ -144,8 +152,10 @@
               width="270"
               height="260"
             />
+            <div>
             <h3 class="name-title">Ольга Репина</h3>
             <p class="text text-after-name">Frontend Developer</p>
+          </div>
           </li>
           <li class="team-item">
             <img class="team-img"
@@ -154,8 +164,10 @@
               width="270"
               height="260"
             />
+            <div>
             <h3 class="name-title">Николай Тарасов</h3>
             <p class="text text-after-name">Marketing</p>
+          </div>
           </li class="team0item">
           <li class="team-item"> 
             <img class="team-img"
@@ -164,15 +176,19 @@
               width="270"
               height="260"
             />
+            <div>
             <h3 class="name-title">Михаил Ермаков</h3>
             <p class="text text-after-name">UI Designer</p>
+          </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!--Подвал-->
     
-    <footer class="footer container">
+    <footer class="footer">
+      <div class="container">
       <a class="logo logo-bot link" href="index.html"
         ><span class="logo-web">Web</span>Studio</a
       >
@@ -193,6 +209,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   
   </body>
