@@ -96,8 +96,6 @@ p {
 .list-contacts-top {
   display: flex;
   padding-left: 0px;
-  /* margin-top: 32px;
-  margin-bottom: 32px; */
 }
 
 .list-contacts-top .contacts-item + .contacts-item {
@@ -130,7 +128,6 @@ p {
 .gg {
   display: flex;
   align-items: center;
-  height: 80px;
 }
 .header-nav {
   margin-right: 330px;
@@ -421,8 +418,8 @@ p {
   letter-spacing: 0.03em;
   font-style: normal;
 
-  height: 38px;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 .portfolio-button-list {
   display: flex;
@@ -455,11 +452,11 @@ p {
 }
 .porfolio-img {
   display: block;
-  margin-bottom: 20px;
 }
 .cards-content {
   border: solid #eeeeee;
   border-width: 0 1px 1px 1px;
+  padding: 20px 24px;
 }
 
 /*-----------------------------------------------------Наши продукти*/
@@ -484,8 +481,4 @@ p {
   letter-spacing: 0.03em;
 
   width: 332px;
-  height: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
 }
