@@ -362,9 +362,9 @@ ul {
 .footer {
   background-color: var(--secondary-background-color);
   color: var(--main-light-color-text);
-  height: 252px;
   display: block;
 
+  padding-bottom: 60px;
   padding-top: 60px;
   max-width: 1600px;
   margin-left: auto;
