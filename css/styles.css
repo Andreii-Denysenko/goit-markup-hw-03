@@ -232,7 +232,6 @@ p {
 
 /*---------------------------------------------- Чем мы занимаемся */
 .aboutus {
-  align-items: center;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -251,7 +250,6 @@ p {
 
 .aboutus-list {
   display: flex;
-  align-items: center;
   margin-top: 0px;
   margin-bottom: 0px;
 }
