@@ -93,6 +93,7 @@ ul {
 .list-contacts-top {
   display: flex;
   padding-left: 0px;
+  margin-left: auto;
 }
 
 .list-contacts-top .contacts-item + .contacts-item {
@@ -122,12 +123,11 @@ ul {
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
-.gg {
+.section-nav {
   display: flex;
   align-items: center;
 }
 .header-nav {
-  margin-right: 330px;
   margin-left: 93px;
 }
 .header {
@@ -138,7 +138,6 @@ ul {
   background-color: var(--secondary-background-color);
 
   text-align: center;
-  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -337,9 +336,6 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
-  width: 145px;
-  height: 31px;
 }
 
 .logo-web {
