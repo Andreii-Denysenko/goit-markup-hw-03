@@ -85,6 +85,7 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  font-style: normal;
 
   margin-top: 9px;
   display: block;
@@ -275,7 +276,6 @@ ul {
 }
 .team-item {
   width: 270px;
-  /* height: 368px; */
   text-align: center;
 
   background-color: #ffffff;
@@ -296,10 +296,6 @@ ul {
   margin-bottom: 50px;
 }
 
-.team-img {
-  margin-bottom: 30px;
-}
-
 .name-title {
   color: var(--primery-text-color);
   font-weight: 500;
@@ -311,6 +307,9 @@ ul {
 .text-after-name {
   line-height: 1.19;
   font-size: 16px;
+}
+.secondary-container-team {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
